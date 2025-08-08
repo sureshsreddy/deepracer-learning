@@ -608,6 +608,7 @@ This comprehensive guide covers everything from system preparation to advanced t
    - Visit https://www.docker.com/products/docker-desktop/
    - Download "Docker Desktop for Windows (WSL 2 backend)"
    - Run installer with default settings
+   - 
 
 2. **Configure Docker Desktop WSL2 Integration**:
    ```powershell
@@ -618,10 +619,15 @@ This comprehensive guide covers everything from system preparation to advanced t
    # Go to Settings → Resources → WSL Integration
    # Enable integration for your Ubuntu distribution
    ```
+   You can also install docker directly
+   ```bash
+      curl https://get.docker.com | sh
+      sudo service docker start
+   ```
 
-3. **Restart Docker Desktop** after configuration changes
+4. **Restart Docker Desktop** after configuration changes
 
-4. **Verify Docker installation in WSL2**:
+5. **Verify Docker installation in WSL2**:
    ```bash
    # In Ubuntu terminal
    docker --version
