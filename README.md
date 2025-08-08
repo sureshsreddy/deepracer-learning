@@ -660,6 +660,13 @@ This comprehensive guide covers everything from system preparation to advanced t
    - Visit https://developer.nvidia.com/cuda-12-9-0-download-archive
    - Select "Linux" → "x86_64" → "Ubuntu" → "20.04"
    - Download the .deb package
+     ```bash
+         wget https://developer.download.nvidia.com/compute/cuda/repos/wsl-ubuntu/x86_64/cuda-keyring_1.1-1_all.deb
+         sudo dpkg -i cuda-keyring_1.1-1_all.deb
+         sudo apt-get update
+         sudo apt-get -y install cuda-toolkit-12-9
+      ```
+     
 
 3. **Install CUDA Toolkit 12.9.0 in WSL2**:
    ```bash
