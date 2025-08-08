@@ -632,6 +632,13 @@ This comprehensive guide covers everything from system preparation to advanced t
    # In Ubuntu terminal
    docker --version
    docker info
+
+   #If Error
+   sudo groupadd docker
+   sudo usermod -aG docker $USER
+   newgrp docker
+   #run below and should not get erro
+   docker ps
    
    # Test basic container
    docker run hello-world
