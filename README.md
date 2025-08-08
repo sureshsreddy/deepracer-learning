@@ -665,6 +665,10 @@ This comprehensive guide covers everything from system preparation to advanced t
          sudo dpkg -i cuda-keyring_1.1-1_all.deb
          sudo apt-get update
          sudo apt-get -y install cuda-toolkit-12-9
+
+        echo 'export PATH=/usr/local/cuda-12.5/bin${PATH:+:${PATH}}' >> ~/.bashrc
+      echo 'export LD_LIBRARY_PATH=/usr/local/cuda-12.5/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}' >> ~/.bashrc
+     source ~/.bashrc
       ```
      
 
